@@ -64,7 +64,7 @@ def button(update: Update, context: CallbackContext):
 
 def main():
     updater = Updater(TOKEN)
-    # нужно проверить атрибуты апдейтера
+    # нужно проверить атрибуты апдейтера и диспатчера
 
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CallbackQueryHandler(button))
